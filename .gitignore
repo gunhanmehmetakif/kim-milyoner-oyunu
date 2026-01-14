@@ -1,0 +1,24 @@
+# OS dosyaları
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor dosyaları
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Geçici dosyalar
+*.tmp
+*.bak
+*.log
+
+# Node modules (eğer gelecekte kullanılırsa)
+node_modules/
+package-lock.json
+
+# Derleme dosyaları
+dist/
+build/

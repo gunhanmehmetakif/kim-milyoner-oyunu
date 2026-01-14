@@ -1,0 +1,146 @@
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    OYUNA SORU EKLEME KILAVUZU                                ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Bu dosya, oyuna yeni sorular eklemeniz veya mevcut soruları düzenlemeniz için 
+hazırlanmıştır. Hiçbir programlama bilgisine gerek yoktur!
+
+
+📁 HANGİ DOSYAYI DÜZENLEMELİYİM?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+👉 "questions.js" dosyasını düzenleyeceksiniz.
+
+
+⚙️ SORU SAYISINI AYARLAMA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+questions.js dosyasının EN BAŞINDA "SORU_SAYISI" değişkenini bulacaksınız:
+
+    const SORU_SAYISI = 10;
+
+Bu sayıyı değiştirerek oyunda kaç soru sorulacağını ayarlayabilirsiniz:
+
+    SORU_SAYISI = 10;   → Oyunda 10 soru sorar
+    SORU_SAYISI = 15;   → Oyunda 15 soru sorar
+    SORU_SAYISI = 20;   → Oyunda 20 soru sorar
+    SORU_SAYISI = 0;    → TÜM soruları sorar (özel özellik!)
+    SORU_SAYISI = -1;   → TÜM soruları sorar (özel özellik!)
+
+💡 İPUCU: 0 veya negatif sayı yazarsanız, dosyada kaç soru varsa hepsini sorar!
+
+
+📝 NASIL DÜZENLERİM?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. "questions.js" dosyasını herhangi bir metin editörü ile açın
+   (Notepad, Notepad++, VS Code, vb.)
+
+2. İsterseniz SORU_SAYISI değişkenini değiştirin (isteğe bağlı)
+
+3. Aşağıdaki formatı takip ederek yeni soru ekleyin veya mevcut soruları düzenleyin
+
+
+✅ SORU FORMATI (ÖRNEK):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+    {
+        soru: "Türkiye'nin başkenti neresidir?",
+        cevaplar: ["İstanbul", "Ankara", "İzmir", "Bursa"],
+        doğru: "B"
+    }
+
+
+📋 AÇIKLAMALAR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• "soru"     → Sorunuzun metnini buraya yazın (tırnak işareti OLMADAN)
+• "cevaplar" → 4 şık yazın (A, B, C, D sırasıyla)
+• "doğru"    → Doğru şıkkın harfini yazın (A, B, C veya D)
+
+
+⚠️ ÖNEMLİ KURALLAR:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Her soru { ile başlayıp } ile bitmelidir
+2. İki soru arasına virgül (,) koymayı unutmayın
+3. Son soruda virgül OLMAMALIDIR
+4. Türkçe karakterler kullanabilirsiniz (ç, ğ, ı, ö, ş, ü)
+5. "soru", "cevaplar", "doğru" kelimelerinde tırnak yok
+
+
+📌 TAM ÖRNEK (3 Soru):
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+const Questions = [
+    {
+        soru: "2+2 kaç eder?",
+        cevaplar: ["3", "4", "5", "6"],
+        doğru: "B"
+    },
+    {
+        soru: "Hangisi bir meyvedir?",
+        cevaplar: ["Havuç", "Elma", "Patates", "Soğan"],
+        doğru: "B"
+    },
+    {
+        soru: "Ay'a ilk ayak basan insan kimdir?",
+        cevaplar: ["Neil Armstrong", "Buzz Aldrin", "Yuri Gagarin", "Michael Collins"],
+        doğru: "A"
+    }
+];
+
+
+🔧 YENİ SORU EKLEME ADIM ADIM:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Son sorunun } işaretinden sonra virgül (,) koyun
+2. Yeni bir satır açın
+3. Aşağıdaki şablonu kopyalayıp yapıştırın:
+
+    {
+        soru: "Sorunuzu buraya yazın?",
+        cevaplar: ["Şık A", "Şık B", "Şık C", "Şık D"],
+        doğru: "B"
+    }
+
+4. Sorunuzu ve şıkları doldurun
+5. Doğru cevabın harfini belirleyin
+6. Son soruda ] işaretinden önce virgül olmamalı!
+7. Dosyayı kaydedin
+
+
+❌ SONA VIRGÜL KOYMAYIN!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+YANLIŞ:
+    {
+        soru: "Son soru",
+        cevaplar: ["A", "B", "C", "D"],
+        doğru: "A"
+    },    ← Bu virgül olmamalı!
+];
+
+DOĞRU:
+    {
+        soru: "Son soru",
+        cevaplar: ["A", "B", "C", "D"],
+        doğru: "A"
+    }
+];
+
+
+💾 DOSYAYI KAYDETTIKTEN SONRA:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. Tarayıcınızı yenileyin (F5)
+2. Oyunu başlatın
+3. Yeni sorularınız artık oyunda görünecek!
+
+
+🐛 SORUN MU YAŞIYORSUNUZ?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+• Tarayıcı konsolunu açın (F12) ve hata mesajlarına bakın
+• Virgülleri ve tırnakları kontrol edin
+• Türkçe karakterler sorun yaratmaz
+• questions.js dosyasının HTML ile aynı klasörde olduğundan emin olun
+
+
+🎓 İPUCU:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Dosyayı düzenlerken yedek alın! Böylece bir hata yaparsanız geri dönebilirsiniz.
+
+
+═══════════════════════════════════════════════════════════════════════════════
+İyi eğlenceler! 🎮
+═══════════════════════════════════════════════════════════════════════════════
