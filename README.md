@@ -2,6 +2,10 @@
 
 "Kim Milyoner Olmak İster" tarzında interaktif bilgi yarışması oyunu! Kendi sorularınızı ekleyin ve özelleştirin. Ses efektleri ve skor sistemiyle gerçek yarışma deneyimi.
 
+## 🎮 [Hemen Oyna!](https://milyoner.mehmetakifgunhan.com/)
+
+**Canlı Demo:** https://milyoner.mehmetakifgunhan.com/
+
 ## 📸 Ekran Görüntüleri
 
 <p align="center">
