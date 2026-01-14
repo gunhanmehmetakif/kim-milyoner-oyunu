@@ -2,6 +2,25 @@
 
 "Kim Milyoner Olmak İster" tarzında interaktif bilgi yarışması oyunu! Kendi sorularınızı ekleyin ve özelleştirin. Ses efektleri ve skor sistemiyle gerçek yarışma deneyimi.
 
+## 📸 Ekran Görüntüleri
+
+<p align="center">
+  <img src="images/image.png" alt="Ana Sayfa" width="45%">
+  <img src="images/image2.png" alt="Oyun Ekranı" width="45%">
+</p>
+
+## 💡 Proje Hikayesi
+
+Bu proje, **yapay zeka destekli geliştirme araçları** kullanılarak **hiçbir kod bilgisi olmadan** 2024 yılında geliştirilmiştir. O dönemde LLM tabanlı kodlama asistanları yeni yeni yaygınlaşmaya başlamıştı ve bu proje, yapay zeka ile sohbet ederek tam bir web uygulaması geliştirmenin mümkün olduğunu göstermiştir.
+
+**🌟 Öne Çıkan Yönler:**
+- Tamamen sohbet tabanlı yapay zeka kullanarak geliştirilmiştir
+- Geleneksel programlama eğitimi gerektirmemiştir
+- Modern web teknolojilerini başarıyla entegre etmiştir
+- Ses sistemleri, animasyonlar ve kullanıcı deneyimi üzerine odaklanmıştır
+
+Bu, yapay zeka destekli yazılım geliştirmenin potansiyelini gösteren güzel bir örnektir!
+
 ## ✨ Özellikler
 
 - 🎵 **5 farklı ses efekti** (giriş müziği, soru başlangıcı, doğru/yanlış cevap sesleri)
@@ -17,7 +36,7 @@
 
 1. Projeyi indirin:
 ```bash
-git clone https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ.git
+git clone https://github.com/gunhanmehmetakif/kim-milyoner-oyunu.git
 ```
 
 2. `index.html` dosyasını herhangi bir tarayıcıda açın
